@@ -1,0 +1,255 @@
+.navbar {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  position: relative;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%; 
+}
+
+.nav-links.left, .nav-links.right {
+  display: flex;
+}
+
+.nav-links.left {
+  justify-content: flex-start; 
+}
+
+.nav-links.right {
+  justify-content: flex-end;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.nav-links a:hover {
+  border-radius: 4px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-content {
+    flex-direction: column; 
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column; 
+    width: 100%;
+    margin-top: 10px; 
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .nav-links li a {
+    padding-left: 20px;
+  }
+
+  /* Show the menu icon in mobile view */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Adjusting font size of h1 for mobile */
+  h1 {
+    font-size: 20px;
+  }
+}
+
+.bg {
+  background-image: url('https://image01.realme.net/general/20241212/1733967716948a355482b82bc419f9182a8ced9a25674.jpg.webp');
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Reduced height for mobile screens */
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card-container {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  width: 80%; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  width: 48%; 
+  flex-direction: row-reverse; 
+  box-sizing: border-box; 
+}
+
+.card-image {
+  width: 150px; 
+  height: 150px;
+  object-fit: cover; 
+  margin-left: 20px; 
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  height: 150px; 
+  width: 500px; 
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.card-button {
+  padding: 5px 15px; 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 10px; 
+  align-self: flex-start; 
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+.text {
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.card-container2 {
+  margin-top: 80px;
+  display: flex;
+  gap: 20px; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  width: 80%;
+  height: 30%; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+footer .container .logo {
+  color: rgb(201, 187, 187);
+}
+
+footer .container .links a,
+footer .container .social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .container .links a:hover,
+footer .container .social a:hover {
+  text-decoration: underline;
+}
+
+.bold {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .container .links,
+  footer .container .social {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    width: 100%; 
+  }
+
+  .card {
+    width: 100%; 
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px; 
+  }
+
+  .card-image {
+    margin-left: 0; 
+    margin-bottom: 15px; 
+  }
+
+  .card-content {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .card-button {
+    align-self: center; 
+  }
+}
